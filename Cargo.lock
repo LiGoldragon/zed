@@ -5874,7 +5874,7 @@ dependencies = [
  "httpdate",
  "itoa",
  "pin-project-lite",
- "socket2 0.5.8",
+ "socket2 0.4.10",
  "tokio",
  "tower-service",
  "tracing",
@@ -7041,7 +7041,7 @@ dependencies = [
 [[package]]
 name = "libwebrtc"
 version = "0.3.7"
-source = "git+https://github.com/zed-industries/rust-sdks?rev=799f10133d93ba2a88642cd480d01ec4da53408c#799f10133d93ba2a88642cd480d01ec4da53408c"
+source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
 dependencies = [
  "cxx",
  "jni",
@@ -7132,7 +7132,7 @@ checksum = "4ee93343901ab17bd981295f2cf0026d4ad018c7c31ba84549a4ddbb47a45104"
 [[package]]
 name = "livekit"
 version = "0.7.0"
-source = "git+https://github.com/zed-industries/rust-sdks?rev=799f10133d93ba2a88642cd480d01ec4da53408c#799f10133d93ba2a88642cd480d01ec4da53408c"
+source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
 dependencies = [
  "chrono",
  "futures-util",
@@ -7154,7 +7154,7 @@ dependencies = [
 [[package]]
 name = "livekit-api"
 version = "0.4.1"
-source = "git+https://github.com/zed-industries/rust-sdks?rev=799f10133d93ba2a88642cd480d01ec4da53408c#799f10133d93ba2a88642cd480d01ec4da53408c"
+source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
 dependencies = [
  "async-tungstenite 0.25.1",
  "futures-util",
@@ -7179,7 +7179,7 @@ dependencies = [
 [[package]]
 name = "livekit-protocol"
 version = "0.3.6"
-source = "git+https://github.com/zed-industries/rust-sdks?rev=799f10133d93ba2a88642cd480d01ec4da53408c#799f10133d93ba2a88642cd480d01ec4da53408c"
+source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
 dependencies = [
  "futures-util",
  "livekit-runtime",
@@ -7196,7 +7196,7 @@ dependencies = [
 [[package]]
 name = "livekit-runtime"
 version = "0.3.1"
-source = "git+https://github.com/zed-industries/rust-sdks?rev=799f10133d93ba2a88642cd480d01ec4da53408c#799f10133d93ba2a88642cd480d01ec4da53408c"
+source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
 dependencies = [
  "async-io 2.4.0",
  "async-std",
@@ -7719,12 +7719,6 @@ name = "multimap"
 version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e5ce46fe64a9d73be07dcbe690a38ce1b293be448fd8ce1e6c1b8062c9f72c6a"
-
-[[package]]
-name = "multimap"
-version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "defc4c55412d89136f966bbb339008b474350e5e6e78d2714439c386b3137a03"
 
 [[package]]
 name = "naga"
@@ -9709,7 +9703,7 @@ dependencies = [
  "itertools 0.10.5",
  "lazy_static",
  "log",
- "multimap 0.8.3",
+ "multimap",
  "petgraph",
  "prost 0.9.0",
  "prost-types 0.9.0",
@@ -9726,9 +9720,9 @@ checksum = "22505a5c94da8e3b7c2996394d1c933236c4d743e81a410bcca4e6989fc066a4"
 dependencies = [
  "bytes 1.9.0",
  "heck 0.5.0",
- "itertools 0.12.1",
+ "itertools 0.10.5",
  "log",
- "multimap 0.10.0",
+ "multimap",
  "once_cell",
  "petgraph",
  "prettyplease",
@@ -9759,7 +9753,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "81bddcdb20abf9501610992b6759a4c888aef7d1a7247ef75e2404275ac24af1"
 dependencies = [
  "anyhow",
- "itertools 0.12.1",
+ "itertools 0.10.5",
  "proc-macro2",
  "quote",
  "syn 2.0.90",
@@ -14829,7 +14823,7 @@ dependencies = [
 [[package]]
 name = "webrtc-sys"
 version = "0.3.5"
-source = "git+https://github.com/zed-industries/rust-sdks?rev=799f10133d93ba2a88642cd480d01ec4da53408c#799f10133d93ba2a88642cd480d01ec4da53408c"
+source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
 dependencies = [
  "cc",
  "cxx",
@@ -14842,7 +14836,7 @@ dependencies = [
 [[package]]
 name = "webrtc-sys-build"
 version = "0.3.5"
-source = "git+https://github.com/zed-industries/rust-sdks?rev=799f10133d93ba2a88642cd480d01ec4da53408c#799f10133d93ba2a88642cd480d01ec4da53408c"
+source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
 dependencies = [
  "fs2",
  "regex",
