@@ -34,6 +34,7 @@
   makeWrapper,
   nodejs_22,
   nix-gitignore,
+  mold,
 
   withGLES ? false,
 }:
@@ -88,6 +89,7 @@ let
         sqlite
         zlib
         zstd
+        mold
       ]
       ++ lib.optionals stdenv.hostPlatform.isLinux [
         alsa-lib
