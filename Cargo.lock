@@ -992,22 +992,6 @@ dependencies = [
 
 [[package]]
 name = "async-tungstenite"
-version = "0.25.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2cca750b12e02c389c1694d35c16539f88b8bbaa5945934fdc1b41a776688589"
-dependencies = [
- "async-native-tls",
- "async-std",
- "async-tls",
- "futures-io",
- "futures-util",
- "log",
- "pin-project-lite",
- "tungstenite 0.21.0",
-]
-
-[[package]]
-name = "async-tungstenite"
 version = "0.28.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6cd055774e8b7f2ff9e5f9646efb298f180c3b886cdf20ef27f5a0bfbe2677b"
@@ -2522,7 +2506,7 @@ dependencies = [
  "anyhow",
  "async-native-tls",
  "async-recursion 0.3.2",
- "async-tungstenite 0.28.1",
+ "async-tungstenite",
  "chrono",
  "clock",
  "cocoa 0.26.0",
@@ -2654,7 +2638,7 @@ dependencies = [
  "assistant_tool",
  "async-stripe",
  "async-trait",
- "async-tungstenite 0.28.1",
+ "async-tungstenite",
  "audio",
  "aws-config",
  "aws-sdk-kinesis",
@@ -5874,7 +5858,7 @@ dependencies = [
  "httpdate",
  "itoa",
  "pin-project-lite",
- "socket2 0.4.10",
+ "socket2 0.5.8",
  "tokio",
  "tower-service",
  "tracing",
@@ -6620,7 +6604,7 @@ checksum = "58d9afa5bc6eeafb78f710a2efc585f69099f8b6a99dc7eb826581e3773a6e31"
 dependencies = [
  "anyhow",
  "async-trait",
- "async-tungstenite 0.28.1",
+ "async-tungstenite",
  "futures 0.3.31",
  "jupyter-protocol",
  "serde",
@@ -7040,8 +7024,9 @@ dependencies = [
 
 [[package]]
 name = "libwebrtc"
-version = "0.3.7"
-source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
+version = "0.3.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "08d039a2817c22b6a66affd6ebd802e52ee29542e9a970656494235908e5575c"
 dependencies = [
  "cxx",
  "jni",
@@ -7131,8 +7116,9 @@ checksum = "4ee93343901ab17bd981295f2cf0026d4ad018c7c31ba84549a4ddbb47a45104"
 
 [[package]]
 name = "livekit"
-version = "0.7.0"
-source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
+version = "0.7.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "808f2de105e4908bc5f2b4d5127f8980f4170688181a001f9e2fd4de78740b48"
 dependencies = [
  "chrono",
  "futures-util",
@@ -7154,9 +7140,10 @@ dependencies = [
 [[package]]
 name = "livekit-api"
 version = "0.4.1"
-source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bccba8f66e9eeef0edd98470bee3212ca4f4468793f18264995feb1ce4ab45dc"
 dependencies = [
- "async-tungstenite 0.25.1",
+ "base64 0.21.7",
  "futures-util",
  "http 0.2.12",
  "jsonwebtoken",
@@ -7179,7 +7166,8 @@ dependencies = [
 [[package]]
 name = "livekit-protocol"
 version = "0.3.6"
-source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6a3554533d83fb849cb140641edcbf48628980ef816f50002202368fe908fb85"
 dependencies = [
  "futures-util",
  "livekit-runtime",
@@ -7196,12 +7184,11 @@ dependencies = [
 [[package]]
 name = "livekit-runtime"
 version = "0.3.1"
-source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6ae53eb874eb86e96e8ccffc31b5a00926d46174cbcb1c24ce4e57b1fcc5c8f6"
 dependencies = [
- "async-io 2.4.0",
- "async-std",
- "async-task",
- "futures 0.3.31",
+ "tokio",
+ "tokio-stream",
 ]
 
 [[package]]
@@ -9720,7 +9707,7 @@ checksum = "22505a5c94da8e3b7c2996394d1c933236c4d743e81a410bcca4e6989fc066a4"
 dependencies = [
  "bytes 1.9.0",
  "heck 0.5.0",
- "itertools 0.10.5",
+ "itertools 0.12.1",
  "log",
  "multimap",
  "once_cell",
@@ -9753,7 +9740,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "81bddcdb20abf9501610992b6759a4c888aef7d1a7247ef75e2404275ac24af1"
 dependencies = [
  "anyhow",
- "itertools 0.10.5",
+ "itertools 0.12.1",
  "proc-macro2",
  "quote",
  "syn 2.0.90",
@@ -10363,7 +10350,7 @@ dependencies = [
  "alacritty_terminal",
  "anyhow",
  "async-dispatcher",
- "async-tungstenite 0.28.1",
+ "async-tungstenite",
  "base64 0.22.1",
  "client",
  "collections",
@@ -10665,7 +10652,7 @@ name = "rpc"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "async-tungstenite 0.28.1",
+ "async-tungstenite",
  "base64 0.22.1",
  "chrono",
  "collections",
@@ -13202,10 +13189,7 @@ checksum = "212d5dcb2a1ce06d81107c3d0ffa3121fe974b73f068c8282cb1c32328113b6c"
 dependencies = [
  "futures-util",
  "log",
- "rustls 0.21.12",
- "rustls-native-certs 0.6.3",
  "tokio",
- "tokio-rustls 0.24.1",
  "tungstenite 0.20.1",
 ]
 
@@ -13688,7 +13672,6 @@ dependencies = [
  "httparse",
  "log",
  "rand 0.8.5",
- "rustls 0.21.12",
  "sha1",
  "thiserror 1.0.69",
  "url",
@@ -13707,7 +13690,6 @@ dependencies = [
  "http 1.2.0",
  "httparse",
  "log",
- "native-tls",
  "rand 0.8.5",
  "sha1",
  "thiserror 1.0.69",
@@ -14822,8 +14804,9 @@ dependencies = [
 
 [[package]]
 name = "webrtc-sys"
-version = "0.3.5"
-source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "06c2e2aad1672257aec801d555424e94e5a39bd38d4a268af77f8f16744a7ad0"
 dependencies = [
  "cc",
  "cxx",
@@ -14835,8 +14818,9 @@ dependencies = [
 
 [[package]]
 name = "webrtc-sys-build"
-version = "0.3.5"
-source = "git+https://github.com/zed-industries/rust-sdks?branch=zed-patches#060964da10574cd9bf06463a53bf6e0769c5c45e"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3457df230a567f12bb337d197d70abce9409485552dfe7b732c0f23207f24ebc"
 dependencies = [
  "fs2",
  "regex",
